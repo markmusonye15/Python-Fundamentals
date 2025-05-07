@@ -142,3 +142,29 @@ x /= 4  # This divides the current value of 'x' by 4 and assigns the result back
 print("Divide and Assign:", x)  # This will print the updated value of 'x'
 
 # 5. Identity Operators  - (ASSIGNMENT OPERATORS)
+
+# Program Question: Rectangle Calculator
+
+# Write a Python script that does the following:
+
+# Prompts the user to enter the length and width of a rectangle.
+length =  input("Enter the length of the rectangle: ")
+width = input("Enter the width of the rectangle: ")
+
+# Ensure you convert these inputs to the correct data type.
+# Stores the inputs in variables named length and width.
+length = float(length)
+width = float(width)
+
+# Calculates:
+
+# Area of the rectangle (area = length * width)
+area = length * width  # Area of the rectangle (area = length * width)
+# Perimeter of the rectangle (perimeter = 2 * (length + width))
+perimeter = 2 * (length + width)  # Perimeter of the rectangle (perimeter = 2 * (length + width))
+
+# Prints both results with clear, descriptive messages.
+print("The area of the rectangle is:", float(area))  # This will print the area of the rectangle
+print("The perimeter of the rectangle is:", float(perimeter))  # This will print the perimeter of the rectangle
+
+
