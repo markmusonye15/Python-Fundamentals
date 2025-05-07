@@ -1,0 +1,14 @@
+- DAY ONE
+    1. Installing Python 
+    2. Creating a python file and running it
+    3. Python Comments 
+
+- DAY TWO
+    1. variables 
+    2. primitive and non-primitive data types 
+    3. operators 
+
+- DAY THREE 
+    1. Control Flow 
+    2. Functions
+    3. Data structures 
