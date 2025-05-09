@@ -30,11 +30,20 @@ This repository contains code examples and notes for learning Python programming
   - Return values
   - Parameters and arguments
 
+### Day Four
+- Data Structures:
+  - Lists (creation, indexing, slicing, adding/removing elements)
+  - Tuples (immutable collections)
+  - Sets (unique collections)
+  - Dictionaries (key-value pairs)
+  - Range objects
+
 ## Files in this Repository
 
 - [app.py](app.py): Introduction to Python basics with simple print statements
 - [day_two.py](day_two.py): Comprehensive examples of variables, data types, and operators
 - [day_three.py](day_three.py): Examples of control flow statements and functions
+- [day_four.py](day_four.py): Examples of Python data structures
 - [notes.txt](notes.txt): Outline of topics covered by day
 - [LICENSE](LICENSE): MIT License for this project
 
@@ -48,6 +57,8 @@ python app.py
 python day_two.py
 # or
 python day_three.py
+# or
+python day_four.py
 ```
 
 ## Examples
@@ -58,6 +69,7 @@ The repository includes practical examples like:
 - Rectangle calculator (user input, calculations, and output)
 - Control flow demonstrations with loops and conditionals
 - Function definitions with various parameter types
+- Data structures implementation and manipulation
 
 ## License
 
