@@ -14,3 +14,10 @@
 
 - DAY FOUR
     3. Data structures 
+
+
+
+Week Two 
+
+- DAY ONE 
+  1. OOP using python 
