@@ -47,17 +47,41 @@ person_two = Person('Jane Doe', 25, 'Data Scientist', '01/01/1995')
 # can we create a class that inherits from another class?
 class Student(Person):
     
-    def __init__(self, name, age, occupation, dob, attendance, track):
+    def __init__(self, name, age, occupation, dob, attendance, track, fees):
 
-        super().__init__(name, age, occupation, dob)
+        super().__init__(name, age, occupation, dob, fees)
 
         # Attributes
         self.attendance = attendance
         self.track = track
+        self.fees = fees
+
         
 
     def ask_question(self):
         print(f'Hello, my name is {self.name} and I am a student. I have {self.track} attendance.')
+
+    def greet(self):
+        print(f'Hello, my name is {self.name} and I am a student. I am {self.age} years old. I am a {self.track} student.')
+
+#   5. Encapsulation - it is a way to restrict access to certain parts of an object.
+    def fees_paid(self, exact_fees_amount):
+        if exact_fees_amount < 0:
+            print('Invalid amount')
+
+        elif exact_fees_amount < self.fees:
+            print('Fees not paid')
+            return exact_fees_amount - self.fees
+        elif exact_fees_amount == self.fees:
+            print('Fees paid In full Amount')
+        else:
+            print('Fees paid in excess')
+            return exact_fees_amount - self.fees
+            
+
+#   6. Abstraction - it is a way to hide the complexity of an object and show only the necessary parts of it.
+
+#   7. Polymorphism - it is a way to create a new class that is a modified version of an existing class.
 
 students = []
 
@@ -77,3 +101,4 @@ for student in students:
     print(f'Track: {student.track}')
     print('-------------------')
 
+# polymorphism - it is a way to create a new class that is a modified version of an existing class.
