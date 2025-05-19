@@ -1,0 +1,77 @@
+SQL - it more like a STRUCTURED QUERY LANGUAGE which allows us to communicate with the 
+      database
+
+DATABASE - A data lake when information is stored (through channels)=(TABLES)
+
+CLIENT(react) => API(FLASK/FASTAPI) => DATABASE(INFORMATION THAT GOING TOBE STRUCTURED)
+
+SQL 
+
+- how can we create a database -> CREATE DATABASE <db-name>
+- how can we delete/do away with the db ->  DROP DATABASE <db-name>
+
+TYPES OF DATABASE 
+
+NoSQl - mongo, dynamodb
+SQL - postgres, sqlite , mysql 
+
+LIBRARY MANAGEMENT SYSTEM CORE FUNCTIONALITITES 
+
+Core Entities & Relationships 
+
+Book - represent the book information
+Author - represent the person who wrote the book
+Category(Genre) - represent the different sections of book within a library
+Member - (Student) - representthe peron who simple borrow a book 
+Loan - represent a record of loan books and members tied to the books
+
+Entity Relationship Diagram
+
+[Author]-<BookAuthor>-[Book]-1-[Loan]-1-<[Member]
+                         |
+                     [Category]
+
+How can i represent this ERD in a database using tables
+
+Author - first_name, last_name, surname, id , age, dob 
+Book - id, title, isbn, published_date, total_copies, available_copies
+Member - id, first_name, last_name, surname, email, joined_date
+Loan - id, book_id, member_id, loaned_on, due_back_on, returned_on, status
+
+Relationships - a connection between two or more tables in a database 
+
+
+Discuss what the specific type of relationship is, what entails and how its used.
+
+one to one - discuss and come up with  an example tp present
+- a single record in a table is linked to another single record in a another table
+
+Users - Member - Staff 
+
+one to many - discuss and come up with  an example tp present
+
+- A single record in one table can be related to multiple records in another table 
+
+Cohort - students 
+sdft13-hybrid - students 
+                cohort_id 
+
+SELECT * FROM students WHERE cohort_id = 'sdft13-hybrid'
+
+return all the student that match the cohort_id
+
+- Category - Books
+
+many to many - discuss and come up with  an example tp present
+
+- A single table can be related to Multiple records in another table and vise versa 
+- Introduces another table to manage the vice versa logic
+
+Author - Books 
+BookAuthor
+Books - Authors 
+
+In the group assigned last week on wednesday. Create the table as per the above discussion
+and create a pull request within a txt file the query commands and and sqlite db file 
+
+
