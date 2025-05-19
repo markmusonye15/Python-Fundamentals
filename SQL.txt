@@ -74,4 +74,7 @@ Books - Authors
 In the group assigned last week on wednesday. Create the table as per the above discussion
 and create a pull request within a txt file the query commands and and sqlite db file 
 
+Explore how to connect the sqlite db instance to a python application.
 
+JOINS - 
+ORMS===> OBJECT RELATIONAL MAPPING 
